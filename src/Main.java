@@ -13,8 +13,8 @@ public class Main {
             System.out.println("Choose 3 for Check Balance");
             System.out.println("Choose 4 for EXIT");
             System.out.print("Choose the operation you want to perform:");
-            int n = scanner.nextInt();
-            switch(n)
+            int choice = scanner.nextInt();
+            switch(choice)
             {
                 case 1:
                     System.out.print("Enter money to be withdrawn:");
@@ -29,7 +29,7 @@ public class Main {
                     {
                         System.out.println("Insufficient Balance");
                     }
-                    System.out.println("");
+                    System.out.println();
                     break;
 
                 case 2:
@@ -37,12 +37,12 @@ public class Main {
                     deposit = scanner.nextInt();
                     balance = balance + deposit;
                     System.out.println(" ₹ "+deposit+" has been successfully deposited");
-                    System.out.println("");
+                    System.out.println();
                     break;
 
                 case 3:
                     System.out.println("Balance : "+" ₹ "+balance);
-                    System.out.println("");
+                    System.out.println();
                     break;
 
                 case 4:
